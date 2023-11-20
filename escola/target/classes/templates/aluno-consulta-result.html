@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Consulta de Aluno</title>
+</head>
+<body>
+    <h1>Resultado da Consulta de Aluno</h1>
+    <!-- Exiba os resultados da consulta conforme necessário -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Matrícula</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop sobre a lista de alunos e exibir cada aluno -->
+            <tr th:each="aluno : ${alunos}">
+                <td th:text="${aluno.id}"></td>
+                <td th:text="${aluno.nome}"></td>
+                <td th:text="${aluno.matricula}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
