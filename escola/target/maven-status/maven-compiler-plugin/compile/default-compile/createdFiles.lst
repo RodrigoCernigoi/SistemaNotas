@@ -15,5 +15,6 @@ com\sistema\escola\data\ProfessorRepository.class
 com\sistema\escola\service\ProfessorServiceImpl.class
 com\sistema\escola\data\NotaRepository.class
 com\sistema\escola\service\AlunoService.class
+com\sistema\escola\controller\MainPageController.class
 com\sistema\escola\data\Nota.class
 com\sistema\escola\service\AlunoServiceImpl.class

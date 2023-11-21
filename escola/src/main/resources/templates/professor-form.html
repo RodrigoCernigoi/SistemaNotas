@@ -4,17 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Professor</title>
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+    <div class = "container mt-5">
     <h1>Formulário de Professor</h1>
     <form action="/professor/cadastrar" method="post">
+        <div class="form-group">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input class="form-control" type="text" id="nome" name="nome" required>
+        </div>
         <br>
+        <div class="form-group">
         <label for="disciplina">Disciplina:</label>
-        <input type="text" id="disciplina" name="disciplina" required>
+        <input class="form-control" type="text" id="disciplina" name="disciplina" required>
         <br>
-        <button type="submit">Cadastrar Professor</button>
+        </div>
+        <div clas="col-6">
+        <button class="btn btn-primary" type="submit">Cadastrar Professor</button>
+        <a href="http://localhost:8080/main/home" class="btn btn-primary">Voltar</a>
+        </div>
     </form>
+    </div>
+    <!-- Adicione os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></script>
+    
+     <script>
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+            var disciplina = document.getElementById('disciplina').value;
+
+            if (nome === "" || disciplina === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false; // Impede o envio do formulário
+            }
+            else if (nome.length < 3) {
+                alert("Por favor, preencha os campos com pelo menos 3 caracteres para Nome.");
+                return false; // Impede o envio do formulário
+            }
+            else{
+                return true; // Permite o envio do formulário  
+            }
+
+            
+        }
+    </script>
 </body>
 </html>

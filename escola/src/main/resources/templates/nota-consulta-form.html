@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Nota</title>
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+    <div class="container mt-5">
     <h1>Consulta de Nota</h1>
-    <form action="/nota/mediaAbaixo" method="get">
-        <!-- Adicione os campos do formulário conforme necessário -->
-        <button type="submit">Consultar Média Abaixo</button>
-    </form>
-    <form action="/nota/mediaAcima" method="get">
-        <!-- Adicione os campos do formulário conforme necessário -->
-        <button type="submit">Consultar Média Acima</button>
-    </form>
+    <div class="d-grid gap-2">
+        <form action="/nota/mediaAbaixo" method="get">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Disciplina</th>
+                    <th scope="col">Tempo</th>
+                    <th scope="col">Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop sobre a lista de alunos e exibir cada aluno  -->
+                <!--<tr th:each="nota : ${notas}">
+                    <td th:text="${nota.disciplina}"></td>
+                    <td th:text="${aluno.tempo}"></td>
+                    <td th:text="${aluno.nota}"></td>
+                </tr>-->
+            </tbody>
+        </table>
+            <button class="btn btn-primary" type="submit">Consultar Média Abaixo</button>
+            <br>
+        </form>
+        <form action="/nota/mediaAcima" method="get">
+            <!-- Adicione os campos do formulário conforme necessário -->
+            <button class="btn btn-primary" type="submit">Consultar Média Acima</button>
+            <br>
+        </form>
+        </div>
+    </div>
+    <!-- Adicione os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></script>
 </body>
 </html>
