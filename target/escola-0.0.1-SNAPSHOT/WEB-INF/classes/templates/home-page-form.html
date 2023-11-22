@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            overflow: hidden;
+        }
+
+        .container-content {
+            position: relative;
+            z-index: 1; 
+        }
+    </style>
+   
+</head>
+<body class="bg-light" >
+
+    <div class="container container-content mt-5">
+        <!-- Banner -->
+        <!-- <img src="img/thumb.jpg" alt="banner" class="img-fluid"> -->
+        
+        
+      
+        
+        <h1 class="mb-4">Homepage</h1>
+        <!-- Barra de navegação -->
+        <nav class="navbar fixed navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Botão para mostrar e ocultar a barra de navegação em telas pequenas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <!-- Itens da barra de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/aluno/consulta">Consulta de Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/aluno/form">Cadastro de Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/nota/consulta">Consulta de Nota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/nota/form">Lançamento de Nota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/professor/consulta">Consulta de Professor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/professor/form">Cadastro de Professor</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        
+
+        
+    </div>
+
+    <!-- Adicione os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></script>
+</body>
+</html>
